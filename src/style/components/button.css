@@ -1,13 +1,25 @@
 .button {
   display: inline-block;
-  background-color: #252c41;
+  box-sizing: border-box;
   font-size: 20px;
   color: #fff;
   font-family: Arial, "Roboto", sans-serif;
-  width: 200px;
+  padding: 0 10px;
   height: 60px;
   line-height: 60px;
   margin-left: 0;
   text-align: center;
   text-decoration: none;
+}
+
+.button.primary {
+  background-color: #252c41;
+  width: 200px;
+}
+
+.button.secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 218px;
+  line-height: 56px;
 }
