@@ -1,12 +1,14 @@
 .container header {
-  height: 55px;
+  overflow: hidden;
   color: #fff;
+  margin-bottom: 138px;
 }
 
 header h1 {
   float: left;
   font-size: 40px;
   font-family: Arial, 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 
 header nav {
