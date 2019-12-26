@@ -1,9 +1,13 @@
+/* Base */
+@import './base/base.css';
+
 /* Componentes */
 @import './components/button.css';
 @import './components/container.css';
 @import './components/description-list.css';
 @import './components/header.css';
 @import './components/picture.css';
+@import './components/wrapper.css';
 
 /* Úteis */
 @import './utils/reset.css';

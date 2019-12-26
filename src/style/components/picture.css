@@ -1,15 +1,11 @@
-.product-picture {
+.picture {
   display: inline-block;
-  left: 0;
+  width: 530px;
   background-color: #fff;
-  width: 40%;
-  height: 600px;
-  margin-top: 95px;
-  margin-left: -60px;
   vertical-align: middle;
-}
 
-.product-picture {
-  width: 550px;
-  height: 550px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+
+  margin-right: 150px;
 }

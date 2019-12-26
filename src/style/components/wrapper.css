@@ -1,0 +1,13 @@
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  width: 530px;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+
+.wrapper > .buttons {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(100% + 98px));
+}
