@@ -5,16 +5,28 @@
   color: #fff;
   font-family: Arial, "Roboto", sans-serif;
   padding: 0 10px;
-  height: 60px;
   line-height: 60px;
   margin-left: 0;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
+
+  transition: all 300ms linear;
+}
+
+.button:active{
+  transform: scale(0.9);
 }
 
 .button.primary {
   background-color: #252c41;
   width: 200px;
+  height: 56px;
+}
+
+.button.primary:hover{
+  color: #e24647;
+  background-color: #fff;
 }
 
 .button.secondary {
@@ -22,5 +34,12 @@
   margin-right: 40px;
   border: 2px solid #fff;
   width: 218px;
+  height: 60px;
   line-height: 56px;
+}
+
+.button.secondary:hover {
+  color: #e24647;
+  background-color: #fff;
+  border: 2px solid #e24647;
 }

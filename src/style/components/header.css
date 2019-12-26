@@ -36,4 +36,13 @@ header > nav > a {
   font-size: 21px;
   margin-left: 55px;
   color: inherit;
+  vertical-align: middle;
+  padding: 5px;
+  border-bottom: 0 solid #fff;
+
+  /* transition: all 2s ease-out; */
+}
+
+header > nav > a:hover {
+  border-bottom: 1px solid #fff;
 }
