@@ -18,10 +18,11 @@ header input[type="search"] {
   border-bottom: 1px solid #fff;
   color: inherit;
   font-family: Arial, "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   padding: 8px;
   width: 358px;
   margin-right: 65px;
+  vertical-align: bottom;
 
   -webkit-appearance: none;
 }
@@ -32,17 +33,18 @@ header > nav {
 }
 
 header > nav > a {
+  display: inline-block;
   text-decoration: none;
   font-size: 21px;
   margin-left: 55px;
   color: inherit;
-  vertical-align: middle;
-  padding: 5px;
-  border-bottom: 0 solid #fff;
+  /* vertical-align: bottom; */
+  padding: 8px;
+  border-bottom: 1px solid transparent;
 
   /* transition: all 2s ease-out; */
 }
 
 header > nav > a:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom-color: #fff;
 }

@@ -23,7 +23,7 @@
 .info > .info__item.--heart {
   position: absolute;
   transform: translateX(-100%);
-  top: 5px;
+  top: 8px;
   left: -47px;
   cursor: pointer;
 }
@@ -32,8 +32,18 @@
   margin-bottom: 10px;
 }
 
+.info .--highlight {
+  transition: transform 100ms linear;
+}
+
 .info .--highlight:hover {
-  transform: scale(1.1);
+  /* gambi aqui, pra não sobreescrever o transform anterior */
+  transform: scale(1.2);
+}
+
+.info .--heart.--highlight:hover {
+  /* gambi aqui, pra não sobreescrever o transform anterior */
+  transform: translateX(-100%) scale(1.2);
 }
 
 .info > .info__item.--stars + .info__item {
