@@ -34,17 +34,75 @@ header > nav {
 
 header > nav > a {
   display: inline-block;
+  position: relative;
   text-decoration: none;
   font-size: 21px;
   margin-left: 55px;
   color: inherit;
   /* vertical-align: bottom; */
-  padding: 8px;
-  border-bottom: 1px solid transparent;
+  padding-bottom: 8px;
 
   /* transition: all 2s ease-out; */
 }
 
-header > nav > a:hover {
-  border-bottom-color: #fff;
+header > nav > a:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 200ms linear;
+  transform-origin: left;
+}
+
+header > nav > a:hover:after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 1235px) {
+  header h1 {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header > nav {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 955px) {
+  header {
+    padding-left: 30px;
+  }
+
+  header input[type="search"] {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  header > nav > a {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 465px) {
+  header > nav > a {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding-left: 16px;
+  }
+
+  header > nav > a {
+    margin-right: 15px;
+  }
 }
