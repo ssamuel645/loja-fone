@@ -34,3 +34,9 @@
     padding-right: 30px;
   }
 }
+
+@media (max-width: 385px) {
+  .container {
+    padding-right: 0;
+  }
+}
